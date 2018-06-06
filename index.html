@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>SystemLab | Soluciones</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Fullscreen Slit Slider with CSS3 and jQuery" />
+        <meta name="keywords" content="slit slider, plugin, css3, transitions, jquery, fullscreen, autoplay" />
+        <meta name="author" content="Codrops" />
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,900,500' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/custom.css" />
+        <link rel="shortcut icon" href="images/favicon.ico">
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+		<noscript>
+			<link rel="stylesheet" type="text/css" href="css/styleNoJS.css" />
+		</noscript>
+    </head>
+    <body>
+        
+        <div class="container demo-1">
+		
+			<!-- Codrops top bar -->
+            <div class="codrops-top clearfix">            	
+                <a href="http://www.systemlab.com.pe">
+                	<img src="images/slogan.png">
+                </a>
+                <span id="contact" class="right">
+                    <a href="">
+                        <strong>Contactenos</strong>
+                    </a>
+                </span>
+                <div class="clr"></div>
+            </div>
+            <!--/ Codrops top bar -->
+
+            <div id="slider" class="sl-slider-wrapper">
+
+				<div class="sl-slider">
+				
+					<div class="sl-slide bg-1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+						<div class="sl-slide-inner">
+							<div class="deco" style="border:none">
+								<img src="images/logo.png" width="100%" alt="">
+								<img src="images/name.png" width="100%" alt="">
+							</div>
+							<div class="main-services">
+								<div id="service-1">
+									<img src="images/a.png">
+									<h2>Desarrollo <br> Web</h2>
+									<p>Planificamos, diseñamos y desarrollamos la web que se ajuste a sus necesidades.</p>
+								</div>
+								<div id="service-2">
+									<img src="images/mobile-app.png">
+									<h2>Aplicaciones <br>Moviles</h2>
+									<p>Convertimos sus necesidades e ideas en aplicaciones para dispositivos móviles.</p>
+								</div>
+								<div id="service-3">
+									<img src="images/ent-solution.png">
+									<h2>Soluciones <br> Empresariales</h2>
+									<p>Diseñamos e implementamos soluciones que ayuden a alcanzar sus objetivos de negocio.</p>
+								</div>
+																							
+							</div>
+						</div>
+					</div>
+					
+					<div class="sl-slide bg-2" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+						<div class="sl-slide-inner service">
+							<div class="deco"><img src="images/services/1.png" width="100%"></div>
+							<h2>Desarrollo Web</h2>
+							<blockquote><p>Desarrollamos sitios web especializados cumpliendo estandares de 
+							calidad y usabilidad que aseguran un mayor impacto en sus clientes.</p></blockquote>
+						</div>
+					</div>
+					
+					<div class="sl-slide bg-3" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner service">
+							<div class="deco"><img src="images/services/2.png" width="100%"></div>
+							<h2>Aplicaciones Moviles</h2>
+							<blockquote><p></p></blockquote>
+						</div>
+					</div>
+					
+					<div class="sl-slide bg-4" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner service">
+							<div class="deco"><img src="images/services/3.png" width="100%"></div>
+							<h2>Soluciones Empresariales</h2>
+							<blockquote><p>Brindamos soluciones tanto en software como hardware que optimiza sus
+								procesos y ayudan a alcanzar los objetivos de su negocio.</p></blockquote>
+						</div>
+					</div>
+					
+					<div class="sl-slide bg-5" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner service">
+							<div class="deco">
+								<div class="register">
+									<form action="" method="post">
+										<input type="email" name="email" placeholder="Correo electronico">
+										<div class="row">
+											<input type="text" name="name" placeholder="Nombre">
+											<input type="text" name="phone" placeholder="Telefono">
+										</div>
+										<div class="row">
+											<textarea name="comment" placeholder="Consulta o Comentario" name="message" rows="5"></textarea>
+										</div>
+										<div class="row">
+											<button id="btnVerify" type="submit">Enviar</button>
+										</div>
+									</form>
+									<div class="msg-info"></div>  
+								</div>
+							</div>
+							<h2>Contactenos</h2>
+							<!-- <blockquote><p> Contactanos ....... </p></blockquote> -->
+						</div>
+					</div>
+				</div><!-- /sl-slider -->
+				
+				<nav id="nav-arrows" class="nav-arrows">
+					<span class="nav-arrow-prev">Previous</span>
+					<span class="nav-arrow-next">Next</span>
+				</nav>
+
+				<nav id="nav-dots" class="nav-dots">
+					<span class="nav-dot-current"></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</nav>
+
+			</div><!-- /slider-wrapper -->
+
+        </div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slitslider.js"></script>
+		<script type="text/javascript">	
+			$(function() {
+			
+				var Page = (function() {
+
+					var $contact = $( '#contact' ),
+						$service1 = $( '#service-1' ),
+						$service2 = $( '#service-2' ),
+						$service3 = $( '#service-3' ),
+						$navArrows = $( '#nav-arrows' ),
+						$nav = $( '#nav-dots > span' ),
+						slitslider = $( '#slider' ).slitslider( {
+							onBeforeChange : function( slide, pos ) {
+
+								$nav.removeClass( 'nav-dot-current' );
+								$nav.eq( pos ).addClass( 'nav-dot-current' );
+
+							}
+						} ),
+
+						init = function() {
+
+							initEvents();
+							
+						},
+						initEvents = function() {
+
+							// add navigation events
+							$navArrows.children( ':last' ).on( 'click', function() {
+
+								slitslider.next();
+								return false;
+
+							} );
+
+							$navArrows.children( ':first' ).on( 'click', function() {
+								
+								slitslider.previous();
+								return false;
+
+							} );
+
+							$nav.each( function( i ) {
+							
+								$( this ).on( 'click', function( event ) {
+									
+									var $dot = $( this );
+									
+									if( !slitslider.isActive() ) {
+
+										$nav.removeClass( 'nav-dot-current' );
+										$dot.addClass( 'nav-dot-current' );
+									
+									}
+									
+									slitslider.jump( i + 1 );
+									return false;
+								
+								} );
+								
+							} );
+
+							$service1.on( 'click', function() {
+								slitslider.jump(2);
+								return false;
+							} );
+
+							$service2.on( 'click', function() {
+								slitslider.jump(3);
+								return false;
+							} );
+
+							$service3.on( 'click', function() {
+								slitslider.jump(4);
+								return false;
+							} );
+
+							$contact.on( 'click', function() {
+								slitslider.jump(5);
+								return false;
+							} );
+
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+				/**
+				 * Notes: 
+				 * 
+				 * example how to add items:
+				 */
+
+				/*
+				
+				var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
+				
+				// call the plugin's add method
+				ss.add($items);
+
+				*/
+			
+			});
+		</script>
+	</body>
+</html>
